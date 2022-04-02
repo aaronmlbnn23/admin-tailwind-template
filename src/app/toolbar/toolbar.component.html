@@ -1,6 +1,5 @@
-<div class="header sticky top-0 bg-white shadow p-4">
+<div class="header sticky top-0 bg-white shadow p-4 pr-10 flex justify-between items-center ">
     <div class="header-content sticky top-0 flex items-center flex-row  h-14">
-      <div>
         <button class="relative group">
           <div (click) = "inputSideNav.toggle()" class="relative flex overflow-hidden items-center justify-center rounded-full w-[40px] h-[40px] transform transition-all duration-200 shadow-md">
             <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden group-focus:translate-x-1.5">
@@ -10,24 +9,59 @@
             </div>
           </div>
         </button>
-      </div>
+    
+      <div class="logo-container relative md:hidden mx-5">
+        <a href="/" class="flex justify-center items-center no-underline h-14 ">
+            <img class="max-w-sm h-14" src="././assets/images/agoncillo-logo.png" alt="">
+            <span class="ml-4 font-medium text-2xl"> Agoncillo RPT</span>
+        </a>
+        </div>
+     
+    </div>
+    
+    <div class="group md:inline-block hidden">
+  
+      <button
+        class="outline-none focus:outline-none  px-3 py-1 bg-white rounded-sm flex items-center min-w-64"
+      >
       
-
-      <div class="flex ml-auto">
-        <div class="flex flex-row items-center">
+        <div class="flex flex-row items-center mx-auto">
           <img
             src="https://pbs.twimg.com/profile_images/378800000298815220/b567757616f720812125bfbac395ff54_normal.png"
             alt
             class="h-10 w-10 bg-gray-200 border rounded-full"
           />
-          <span class="flex flex-col ml-2">
+          <span class="flex flex-col mx-2">
             <span class="truncate w-20 font-semibold tracking-wide leading-none">John Doe</span>
             <span class="truncate w-20 text-gray-500 text-xs leading-none mt-1">Manager</span>
             
           </span>
         
         </div>
-      </div>
+      
+        <span>
+          <svg
+            class="fill-current h-4 w-4 transform group-hover:-rotate-180
+            transition duration-150 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </span>
+      </button>
+      <ul
+        class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+      transition duration-150 ease-in-out origin-top w-48 p-0 text-lg"
+      >
+        <li class="rounded-sm px-3 py-2 hover:bg-gray-100">Programming</li>
+        <li class="rounded-sm px-3 py-2 hover:bg-gray-100">Settings</li>
+        <li class="rounded-sm px-3 py-2 hover:bg-gray-100">Change Password</li>
+        <hr>
+        <li class="rounded-sm px-3 py-2 hover:bg-gray-100">Sign out</li>
+      </ul>
     </div>
 </div>
 
