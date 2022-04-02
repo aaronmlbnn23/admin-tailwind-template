@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { MainAppComponent } from './main-app/main-app.component';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { PaymentComponent } from './modules/payment/payment.component';
+import { SettingsComponent } from './modules/settings/settings.component';
 
 
 
@@ -22,7 +24,9 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
  
     MainAppComponent,
     ToolbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    PaymentComponent,
+    SettingsComponent
   
   ],
   imports: [

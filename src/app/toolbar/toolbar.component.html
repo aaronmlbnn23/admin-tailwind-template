@@ -1,7 +1,17 @@
-<div class="header sticky top-0 bg-white shadow py-4 px-4">
-    <div class="header-content sticky top-0 flex items-center flex-row">
-     
-        <a class="side-nav-button"><mat-icon (click) = "inputSideNav.toggle()" style="color: black" aria-hidden="false" aria-label="Example home icon">menu</mat-icon></a>
+<div class="header sticky top-0 bg-white shadow p-4">
+    <div class="header-content sticky top-0 flex items-center flex-row  h-14">
+      <div>
+        <button class="relative group">
+          <div (click) = "inputSideNav.toggle()" class="relative flex overflow-hidden items-center justify-center rounded-full w-[40px] h-[40px] transform transition-all duration-200 shadow-md">
+            <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden group-focus:translate-x-1.5">
+              <div class="bg-slate-800 h-[2px] w-5 transform transition-all duration-300 origin-left group-focus:rotate-[42deg] group-focus:w-2/3 delay-150"></div>
+              <div class="bg-slate-800 h-[2px] w-5 transform transition-all duration-300 group-focus:translate-x-10"></div>
+              <div class="bg-slate-800 h-[2px] w-5 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg] group-focus:w-2/3 delay-150"></div>
+            </div>
+          </div>
+        </button>
+      </div>
+      
 
       <div class="flex ml-auto">
         <div class="flex flex-row items-center">

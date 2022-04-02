@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MainAppComponent } from './main-app/main-app.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { PaymentComponent } from './modules/payment/payment.component';
+import { SettingsComponent } from './modules/settings/settings.component';
 
 
 
@@ -13,6 +15,14 @@ const routes: Routes = [
         {
             path: 'dashboard',
             component: DashboardComponent
+        },
+        {
+            path: 'payment',
+            component: PaymentComponent
+        },
+        {
+            path: 'settings',
+            component: SettingsComponent
         },
         {
             path:'',
