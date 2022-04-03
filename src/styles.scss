@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .btn-primary {
+      @apply bg-cyan-600 py-2 px-4 hover:bg-cyan-800 rounded-md text-slate-50
+    }
 
+    .btn-secondary {
+      @apply bg-gray-600 py-2 px-4 hover:bg-gray-800 rounded-md text-slate-50
+    }
+  }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow: hidden;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow: hidden; font-size: 1rem;}
